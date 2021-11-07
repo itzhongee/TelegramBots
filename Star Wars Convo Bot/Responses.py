@@ -1,9 +1,7 @@
 from datetime import datetime
-#import stockmarketscraper as stonk
 
 def sample_responses(input_text):
     user_message = str(input_text).lower()
-    #stock = str(input_text).lower()
 
     if user_message in ("hello","hi","hey","sup"):
         return "Hey! How's it going?"
@@ -65,9 +63,6 @@ def sample_responses(input_text):
         now = datetime.now()
         date_time = now.strftime("%d/%m/%y, %H:%M:%S")
 
-        return str(date_time)
-    
-    # if stock = input("Enter stock ticker: "):
-    #     return   
+        return str(date_time) 
     
     return "I don't understand you"
